@@ -5,12 +5,9 @@ const Issues = () => {
   const [issues, setIssues] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const issuesPerPage = 10;
-
   useEffect(() => {
     fetch("https://api.github.com/repos/facebook/react/issues", {
-      headers: {
-        authorization: "token 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",
-      },
+      
     })
       .then((response) => response.json())
       .then((data) => setIssues(data))
@@ -29,7 +26,7 @@ const Issues = () => {
         {currentIssues.map((issue) => (
           <Issue
             key={issue.id}
-            id={issue.id}
+            id={issue.node_id}
             text={issue.title || "No Title"}
             isOpen={issue.state}
             number={issue.number}
@@ -41,7 +38,7 @@ const Issues = () => {
                 color: label.color,
               })) || []
             }
-            comments = {issue.comments}
+            comments = {issue.comments || 0}
           />
         ))}
       </ul>

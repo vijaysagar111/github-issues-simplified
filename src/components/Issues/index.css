@@ -39,17 +39,17 @@
   .Issue .Badges .badge {
     background-color: #eff3f6;
     border-radius: 20px;
-    color: #586069;
     font-size: 12px;
     font-weight: 600;
     margin-right: 8px;
     margin-bottom: 8px;
     padding: 4px 8px;
     white-space: nowrap;
+    
   }
   
   .Issue .Badges .badge:first-child {
-    margin-left: 0;
+    margin-left: 5px;
   }
   
   .Issue .Badges .badge:last-child {

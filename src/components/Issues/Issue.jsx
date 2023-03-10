@@ -21,11 +21,14 @@ const Issue = (props) => {
         <h4 className="title">{props.text}</h4>
         <span className="Badges">
           {props.badges.map((badge) => {
+            const luminance = (0.299 * parseInt(badge.color.substring(1,3), 16)) + (0.587 * parseInt(badge.color.substring(3,5), 16)) + (0.114 * parseInt(badge.color.substring(5,7), 16));
+            const textColor = luminance > 128 ? '#000000' : '#ffffff';
+            
             return (
               <span
                 key={props.id}
                 className="badge"
-                style={{ backgroundColor: badge.color }}
+                style={{ backgroundColor: `#${badge.color}`, color:textColor }}
               >
                 {badge.text}
               </span>

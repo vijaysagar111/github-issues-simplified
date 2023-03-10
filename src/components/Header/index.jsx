@@ -1,6 +1,8 @@
 import React from 'react'
 import './index.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Header() {
   return (
@@ -8,21 +10,19 @@ function Header() {
         <div className="align_center">
           <div className="left_nav">
             <div className="logo">
-              <img src={require("./logo.png")} 
-               alt=""
-               style={{backgroundColor: 'white',
-              borderRadius: "50%" 
-
-              }}
+              <FontAwesomeIcon icon={faGithub} size="2x" 
                />
             </div>
             <div className="menu">
               <ul>
-                <li>Product <FontAwesomeIcon style={{color
-                :"white"}}/></li>
-                <li>Solutions <FontAwesomeIcon /></li>
-                <li>Open Source <FontAwesomeIcon /></li>
-                <li>Pricing <FontAwesomeIcon /></li>
+                <li>Product <FontAwesomeIcon icon={faAngleDown} style={{color
+                :"grey"}}/></li>
+                <li>Solutions <FontAwesomeIcon icon={faAngleDown} style={{color
+                :"grey"}}/></li>
+                <li>Open Source <FontAwesomeIcon icon={faAngleDown} style={{color
+                :"grey"}} /></li>
+                <li>Pricing <FontAwesomeIcon icon={faAngleDown} style={{color
+                :"grey"}}/></li>
               </ul>
             </div>
           </div>

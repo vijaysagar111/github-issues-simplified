@@ -18,7 +18,7 @@
 }
 
 .logo{
-    margin-right: 20px;
+    margin-right: 25px;
 }
 .left_nav{
     width: 100%;
@@ -36,7 +36,7 @@
     list-style-type: none;
 }
 .align_center .left_nav ul li{
-    margin-right: 40px;
+    margin-right: 25px;
 }
 
 
@@ -57,8 +57,21 @@
 
 input::placeholder {
     padding-left: 10px;
+    color: grey;
   }
 
+input{
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(66, 66, 66);
+}
+*:focus {
+    outline: none;
+}
+
+
+.search:focus{
+    outline: none;
+}
   .signup_btn{
     padding: 8px 15px;
     background-color: transparent;

@@ -1,0 +1,11 @@
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .rightsub > span{
+    margin-right: 20px;
+    color: black;
+    
+  }

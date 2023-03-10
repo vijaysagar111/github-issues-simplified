@@ -1,0 +1,136 @@
+.Issues {
+    margin: 20px;
+  }
+  
+  .Issue {
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    
+  }
+  
+  .Issue .header {
+    align-items: center;
+    display: flex;
+   justify-content: space-between;
+   
+  }
+  .leftlist{
+    display: flex;
+    align-items: center;
+  }
+.leftlist .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+.leftlist .isOpen {
+    margin-right: 8px;
+  }
+  
+  .Issue .Badges {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .Issue .Badges .badge {
+    background-color: #eff3f6;
+    border-radius: 20px;
+    color: #586069;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  
+  .Issue .Badges .badge:first-child {
+    margin-left: 0;
+  }
+  
+  .Issue .Badges .badge:last-child {
+    margin-right: 0;
+  }
+  
+  .Issue .Badges .badge.orange {
+    background-color: #f9d0c4;
+    color: #cb2431;
+  }
+  
+  .Issue .Badges .badge.green {
+    background-color: #c2e0c6;
+    color: #28a745;
+  }
+  
+  .Issue .Badges .badge.blue {
+    background-color: #c8e1ff;
+    color: #0366d6;
+  }
+  
+  .Issue .Badges .badge.gray {
+    background-color: #eff3f6;
+    color: #586069;
+  }
+  
+  .Issue .Badges .badge.purple {
+    background-color: #e6dcff;
+    color: #6f42c1;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+    list-style: none;
+  }
+  
+  .page-link {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .page-link:hover {
+    background-color: #eee;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .page-item.disabled .page-link {
+    color: #aaa;
+    pointer-events: none;
+  }
+  
+  .comment {
+    text-align: right;
+    position: relative;
+  }
+  
+  .comment-count {
+    position: absolute;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+ 
+  
+  
+
+ 
+  

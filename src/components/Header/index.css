@@ -1,0 +1,69 @@
+.nav_header{
+    background-color: #21262d;
+    color: white;
+    font-size: 15px;
+    
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.align_center{
+    display: flex;
+    width: 85%;
+    
+   
+}
+
+.logo{
+    margin-right: 20px;
+}
+.left_nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu{
+    width: 100%;
+}
+.align_center .left_nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.align_center .left_nav ul li{
+    margin-right: 40px;
+}
+
+
+.align_center .right_nav{
+   width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.right_nav .search input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+  }
+
+  .signup_btn{
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 0;
+    box-shadow: 1px 1px 1px 0px rgba(133, 130, 130, 0.2),-1px -1px 1px 0px rgba(133, 130, 130, 0.2);
+    color: white;
+    margin-right: 10px;
+  }
